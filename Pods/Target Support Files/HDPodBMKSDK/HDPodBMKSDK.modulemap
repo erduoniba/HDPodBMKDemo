@@ -1,0 +1,6 @@
+framework module HDPodBMKSDK {
+  umbrella header "HDPodBMKSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
