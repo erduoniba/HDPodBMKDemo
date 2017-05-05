@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E50900E1E0D69F7ECF10C41B58F9CE1E87EC3D51",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E50900E1E0D69F7ECF10C41B58F9CE1E87EC3D51" : 9223372036854775807,
+    "5F4E2F1A18131A486DCED0FFB6155AC57131F895" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9068EE55-096A-4E49-8DD7-82A4ADA17336",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E50900E1E0D69F7ECF10C41B58F9CE1E87EC3D51" : "HDPodBMKDemo\/",
+    "5F4E2F1A18131A486DCED0FFB6155AC57131F895" : "HDPodBMKSDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HDPodBMKDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HDPodBMKDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDPodBMKSDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5F4E2F1A18131A486DCED0FFB6155AC57131F895"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDPodBMKDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E50900E1E0D69F7ECF10C41B58F9CE1E87EC3D51"
+    }
+  ]
+}

@@ -13,7 +13,33 @@ pre_install do |installer|
 end
 
 target 'HDPodBMKDemo' do
-#	pod 'HDPodBMKSDK', :path => ‘../HDPodBMKSDK'
-	pod 'HDPodBMKSDK', :git => ‘https://github.com/erduoniba/HDPodBMKSDK.git'
+	pod 'HDPodBMKSDK', :path => ‘../HDPodBMKSDK'
+#	pod 'HDPodBMKSDK', :git => ‘https://github.com/erduoniba/HDPodBMKSDK.git'
 
 end
+
+#post_install do |installer|
+#    project_location = './Pods/Pods.xcodeproj'
+#    # 设置使用#{framework_names}对应的target
+#    target_names = ['HDPodBMKSDK']
+#    framework_names = [ 'BaiduMapKit' ]
+#
+#    project = installer.pods_project
+#
+#    framework_names.each do |framework_name|
+#        frameworks = project.pod_group(framework_name)
+#        .children
+#        .find { |group| group.name == 'Frameworks' }
+#        .children
+#
+#        target_names.each do |target_name|
+#            target = project.targets.find { |target| target.to_s == target_name }
+#            frameworks_group = project.groups.find { |group| group.display_name == 'Frameworks' }
+#            frameworks_build_phase = target.build_phases.find { |build_phase| build_phase.to_s == 'FrameworksBuildPhase' }
+#
+#            frameworks.each do |file_ref|
+#                frameworks_build_phase.add_file_reference(file_ref)
+#            end
+#        end
+#    end
+#end

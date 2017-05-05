@@ -7,21 +7,16 @@ PODS:
     - BaiduMapKit
 
 DEPENDENCIES:
-  - HDPodBMKSDK (from `https://github.com/erduoniba/HDPodBMKSDK.git`)
+  - HDPodBMKSDK (from `../HDPodBMKSDK`)
 
 EXTERNAL SOURCES:
   HDPodBMKSDK:
-    :git: https://github.com/erduoniba/HDPodBMKSDK.git
-
-CHECKOUT OPTIONS:
-  HDPodBMKSDK:
-    :commit: 40dfb2836a311a2f974ce79ca7afadc75568f9cb
-    :git: https://github.com/erduoniba/HDPodBMKSDK.git
+    :path: ../HDPodBMKSDK
 
 SPEC CHECKSUMS:
   BaiduMapKit: 6517f84bdca032170ee9da39985bb64eba8ed900
   HDPodBMKSDK: 5ca65f8406792aaa0b01cb9903503723f1f9334e
 
-PODFILE CHECKSUM: 28a06d21c2b4787e73c31ec8926eca6e96d33c17
+PODFILE CHECKSUM: c519a3ee14dec11d0e4f39cc23ccacd4a4f8dc01
 
 COCOAPODS: 1.2.1
