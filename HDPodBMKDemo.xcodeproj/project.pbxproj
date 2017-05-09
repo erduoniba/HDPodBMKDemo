@@ -362,31 +362,12 @@
 			};
 			name = Release;
 		};
-		D907A4451EBA314900976C7F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7C997BDECCDEBA9258548F0 /* Pods-Default-HDPodBMKDemo.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B9FH944VTE;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HDPodBMKDemo",
-				);
-				INFOPLIST_FILE = HDPodBMKDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDBaiduMapDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0380381a-fdcd-469a-aa10-4e4e245f46f5";
-				PROVISIONING_PROFILE_SPECIFIER = wildcard_dev;
-			};
-			name = Debug;
-		};
-		D907A4461EBA314900976C7F /* Release */ = {
+		D907A4451EBA314900976C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 554A120624155E5259DE5CCE /* Pods-Default-HDPodBMKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = B9FH944VTE;
 				ENABLE_BITCODE = NO;
@@ -394,14 +375,70 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDPodBMKDemo",
 				);
-				INFOPLIST_FILE = HDPodBMKDemo/Info.plist;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/HDPodBMKDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"crypto\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"stdc++.6.0.9\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Location\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Radar\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"HDPodBMKSDK\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDBaiduMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "33c8d47c-0431-494e-b39f-b9ce828a7311";
 				PROVISIONING_PROFILE_SPECIFIER = "XC iOS Ad Hoc: *";
 			};
 			name = Release;
+		};
+		D915B9BA1EC1A1DF0065FF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C997BDECCDEBA9258548F0 /* Pods-Default-HDPodBMKDemo.debug.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = B9FH944VTE;
+				ENABLE_BITCODE = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/HDPodBMKDemo/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDBaiduMapDemo;
+				PRODUCT_NAME = HDPodBMKDemo;
+				PROVISIONING_PROFILE = "3ee15c7e-895b-4929-857b-1c988973c6e6";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_dev;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -418,8 +455,8 @@
 		D907A4441EBA314900976C7F /* Build configuration list for PBXNativeTarget "HDPodBMKDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D907A4451EBA314900976C7F /* Debug */,
-				D907A4461EBA314900976C7F /* Release */,
+				D907A4451EBA314900976C7F /* Release */,
+				D915B9BA1EC1A1DF0065FF6B /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

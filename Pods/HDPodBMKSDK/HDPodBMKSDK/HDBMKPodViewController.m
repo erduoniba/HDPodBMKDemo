@@ -30,17 +30,26 @@
     [super viewDidLoad];
     
     self.title = @"Pod工程的百度地图";
-    
-    //    BMKMapManager* _mapManager = [[BMKMapManager alloc]init];
-    //    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
-    //    BOOL ret = [_mapManager start:@"qbfQUpMvsAkqgwFZL8YVy89dK9ZXZE3h" generalDelegate:nil];
-    //    if (!ret) {
-    //        NSLog(@"manager start failed!");
-    //    }
-    
+
+    BMKMapManager* _mapManager = [[BMKMapManager alloc]init];
+    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+    BOOL ret = [_mapManager start:@"qbfQUpMvsAkqgwFZL8YVy89dK9ZXZE3h" generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+
     self.view.backgroundColor = [UIColor grayColor];
     
     self.mapView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+
+    UIButton *bt = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    bt.frame = CGRectMake(self.view.frame.size.width - 80, self.view.frame.size.height - 80, 40, 40);
+    [bt addTarget:self action:@selector(dismissToMasterVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bt];
+}
+
+- (void)dismissToMasterVC {
+    [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
