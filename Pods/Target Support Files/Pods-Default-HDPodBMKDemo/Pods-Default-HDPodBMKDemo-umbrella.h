@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_HDPodBMKDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_HDPodBMKDemoVersionString[];
+FOUNDATION_EXPORT double Pods_Default_HDPodBMKDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Default_HDPodBMKDemoVersionString[];
 

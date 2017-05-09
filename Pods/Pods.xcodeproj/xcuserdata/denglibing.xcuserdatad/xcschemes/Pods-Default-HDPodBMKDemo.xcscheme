@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6757E7A77C37A1A507040F9D8B140AE7"
-               BuildableName = "Pods_HDPodBMKDemo.framework"
-               BlueprintName = "Pods-HDPodBMKDemo"
+               BlueprintIdentifier = "6E84E4530D070FC68067269A2563069E"
+               BuildableName = "Pods_Default_HDPodBMKDemo.framework"
+               BlueprintName = "Pods-Default-HDPodBMKDemo"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6757E7A77C37A1A507040F9D8B140AE7"
-            BuildableName = "Pods_HDPodBMKDemo.framework"
-            BlueprintName = "Pods-HDPodBMKDemo"
+            BlueprintIdentifier = "6E84E4530D070FC68067269A2563069E"
+            BuildableName = "Pods_Default_HDPodBMKDemo.framework"
+            BlueprintName = "Pods-Default-HDPodBMKDemo"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

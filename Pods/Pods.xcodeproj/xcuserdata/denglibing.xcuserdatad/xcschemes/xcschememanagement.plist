@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HDPodBMKDemo.xcscheme</key>
+		<key>Pods-Default-HDPodBMKDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0126C4A1FACCBF4ECAE69DCD3AF1EBA7</key>
+		<key>1A157B5D0F10611CC991DAE85E795D68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6757E7A77C37A1A507040F9D8B140AE7</key>
+		<key>6E84E4530D070FC68067269A2563069E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
