@@ -25,10 +25,25 @@
 }
 
 - (IBAction)hostPresent:(id)sender {
+
+#ifdef DEBUG
+    NSLog(@"hostPresent DEBUG");
+#else
+    NSLog(@"hostPresent RELEASE");
+#endif
+
     [self presentViewController:ViewController.new animated:YES completion:Nil];
 }
 
 - (IBAction)podPresent:(id)sender {
+
+#ifdef DEBUG
+    NSLog(@"podPresent DEBUG");
+#else
+    NSLog(@"podPresent RELEASE");
+#endif
+
+
     [self presentViewController:HDBMKPodViewController.new animated:YES completion:Nil];
 }
 
