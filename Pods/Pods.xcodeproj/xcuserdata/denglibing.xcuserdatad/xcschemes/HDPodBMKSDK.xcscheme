@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1A157B5D0F10611CC991DAE85E795D68'
+               BlueprintIdentifier = 'ECAFF98211C694308DAF4E76506B1AD8'
                BlueprintName = 'HDPodBMKSDK'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'HDPodBMKSDK.framework'>

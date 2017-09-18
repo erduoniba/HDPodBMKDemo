@@ -20,34 +20,34 @@ end
 #百度地图SDK现在使用的7个framework，为了支持ssl所以还添加了两个.a的静态库，这个时候需要使用如下命令来让cocoapods对静态库支持
 pre_install do |installer|
     # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
-    def installer.verify_no_static_framework_transitive_dependencies; end
+    Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
 end
 
-post_install do |installer|
-    project_location = './Pods/Pods.xcodeproj'
-    # 设置使用#{framework_names}对应的target
-    target_names = ['HDPodBMKSDK']
-    framework_names = [ 'BaiduMapKit' ]
-
-    project = installer.pods_project
-
-    framework_names.each do |framework_name|
-        frameworks = project.pod_group(framework_name)
-        .children
-        .find { |group| group.name == 'Frameworks' }
-        .children
-
-        target_names.each do |target_name|
-            target = project.targets.find { |target| target.to_s == target_name }
-            frameworks_group = project.groups.find { |group| group.display_name == 'Frameworks' }
-            frameworks_build_phase = target.build_phases.find { |build_phase| build_phase.to_s == 'FrameworksBuildPhase' }
-
-            frameworks.each do |file_ref|
-                frameworks_build_phase.add_file_reference(file_ref)
-            end
-        end
-    end
-end
+#post_install do |installer|
+#    project_location = './Pods/Pods.xcodeproj'
+#    # 设置使用#{framework_names}对应的target
+#    target_names = ['HDPodBMKSDK']
+#    framework_names = [ 'BaiduMapKit' ]
+#
+#    project = installer.pods_project
+#
+#    framework_names.each do |framework_name|
+#        frameworks = project.pod_group(framework_name)
+#        .children
+#        .find { |group| group.name == 'Frameworks' }
+#        .children
+#
+#        target_names.each do |target_name|
+#            target = project.targets.find { |target| target.to_s == target_name }
+#            frameworks_group = project.groups.find { |group| group.display_name == 'Frameworks' }
+#            frameworks_build_phase = target.build_phases.find { |build_phase| build_phase.to_s == 'FrameworksBuildPhase' }
+#
+#            frameworks.each do |file_ref|
+#                frameworks_build_phase.add_file_reference(file_ref)
+#            end
+#        end
+#    end
+#end
 
 #post_install do |installer|
 #    # Replace these with your values
